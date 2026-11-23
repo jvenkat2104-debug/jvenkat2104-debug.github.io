@@ -23,6 +23,7 @@ New to Data Engineering? Begin with the [hands-on beginner pathway](../data-engi
 | [6. Job-market evidence](job-market-evidence.md) | Read a dated, limited employer-posting sample critically |
 | [7. Student learning paths](student-learning-paths.md) | Choose milestones and evidence rather than a tool shopping list |
 | [8. Canteen project](canteen-data-to-ai-project.md) | Design a connected data-to-prediction system in manageable stages |
+| [LiteLLM](litellm-local-gateway.md) | See where an AI gateway fits, then run one locally on Windows |
 
 The canteen example runs through all chapters. Start locally with synthetic data; the project brief requires no paid cloud account or AI API. It is a learning exercise, not a validated system for food purchasing.
 

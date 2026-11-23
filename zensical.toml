@@ -72,7 +72,8 @@ nav = [
 { "Student learning paths for AI and data" = "engineering-roadmap/03-the-ai-impact/student-learning-paths.md" },
 { "Canteen project: from records to reliable predictions" = "engineering-roadmap/03-the-ai-impact/canteen-data-to-ai-project.md" },
 { "Understanding AI\u00e2\u20ac\u2122s impact on engineering" = "engineering-roadmap/03-the-ai-impact/ai-advancements.md" },
-{ "A practical development workflow" = "engineering-roadmap/03-the-ai-impact/modern-developer-workflow.md" }
+{ "A practical development workflow" = "engineering-roadmap/03-the-ai-impact/modern-developer-workflow.md" },
+{ "LiteLLM" = "engineering-roadmap/03-the-ai-impact/litellm-local-gateway.md" }
 ] },
 { "Technical deep dives" = [
 { "Start here" = [

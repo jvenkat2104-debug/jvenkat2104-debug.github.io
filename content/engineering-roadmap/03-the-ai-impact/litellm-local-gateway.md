@@ -4,7 +4,7 @@
 
 Status: Draft | Model listing and end-to-end chat confirmed in a learner run
 
-LiteLLM gives applications a common API for calling models across providers. It comes as a Python SDK you can import into an application and as a proxy you can run as a separate gateway service. [LiteLLM overview](https://docs.litellm.ai/docs/)
+LiteLLM is an open-source project from BerriAI that gives applications a common API for calling models across providers. It comes as a Python SDK you can import into an application and as a proxy you can run as a separate gateway service. [LiteLLM overview](https://docs.litellm.ai/docs/) · [Wikipedia background](https://en.wikipedia.org/wiki/LiteLLM)
 
 ## Where LiteLLM fits
 
@@ -18,6 +18,8 @@ Imagine you’re building a college canteen assistant. You start with a model on
 | LiteLLM Proxy | Gives clients one API endpoint and routes their requests to a configured backend, such as Ollama or Bedrock. |
 
 If your application only uses models through Bedrock, it can call Bedrock directly. A gateway can be useful when several applications need a common interface across local and cloud backends. LiteLLM can sit in front of Bedrock, but swapping backends can still change response quality, latency, and supported features. Test the prompts and features your app depends on after a switch. [Amazon Bedrock overview](https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html) · [LiteLLM Bedrock integration](https://docs.litellm.ai/docs/providers/bedrock)
+
+For a shared gateway, LiteLLM can also issue virtual keys to callers, track usage and spend, and apply configured budgets or rate limits. In this lab, you’ll start with one key and see how aliases and fallback work before adding those controls. [LiteLLM overview](https://docs.litellm.ai/docs/)
 
 ## Run a local LiteLLM gateway on Windows
 
@@ -60,6 +62,8 @@ Ask the model to explain the difference between a model, an inference server and
 Look for `qwen2.5:3b`. This checks that Ollama responds on the Windows host and knows about the model.
 
 ## 3. Configure and start LiteLLM
+
+Before pulling a Docker image or installing the Python package, check the project’s security advisories. For a repeatable lab, pin the image you’ve reviewed by digest so later runs use the same artifact. The `latest` tag can move. [LiteLLM security advisories](https://github.com/BerriAI/litellm/security)
 
 Create a separate lab folder and save the following as `config.yaml`. If you use Notepad, check that the filename ends in `.yaml`.
 
